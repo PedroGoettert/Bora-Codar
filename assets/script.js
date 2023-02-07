@@ -91,7 +91,7 @@ equals.addEventListener('click', () => {
     } else if (Signs === '/') {
         resultValue = firstValue / secondValue
     }
-   
+
     result.innerHTML = resultValue
     firstValue = resultValue
     secondValue = ''
@@ -144,6 +144,7 @@ btn_comma.addEventListener('click', () => {
         if (firstValue === '') {
             resultValue = 0 + '.'
             firstValue = resultValue
+            comma = '.'
         } else {
             if (comma === '') {
                 firstValue = firstValue + '.'
@@ -157,6 +158,7 @@ btn_comma.addEventListener('click', () => {
         if (secondValue === '') {
             resultValue = 0 + '.'
             secondValue = resultValue
+            comma = '.'
         } if (comma === '') {
             secondValue = secondValue + '.'
             result.innerHTML = secondValue
